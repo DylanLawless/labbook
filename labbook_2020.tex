@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%		Lab book
+%%%%		Dylan Lawless 2020
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{head/settings_lawless.tex}
+% custom packages, etc. in this file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% HEAD: Book-Begin                  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\frontmatter
+\input{head/titlepage.tex}
+\input{head/statement}
+%\input{head/acknowledgements}
+%\include{head/abstracts}
+\clearpage
+\tableofcontents
+\clearpage
+
+%%%%	Table and figure TOC %%%%
+% \listoffigures
+% \addcontentsline{toc}{chapter}{List of figures} % adds an entry to the table of contents
+% \listoftables
+% \addcontentsline{toc}{chapter}{List of tables} % adds an entry to the table of contents
+
+% \setlength{\parskip}{1em} % space before each new paragraph (needs to be after titlepage and frontmatter to keep the table of contents lists short)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	MAIN: The contents of the labbook  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\newpage
+% \include{main/ch_abbreviations}
+\input{main/contents_1.tex}
+\input{main/methods.tex}
+\section{Go to End} \refstepcounter{dummy} \label{sec:End} % Marker for page header shortcut to most recent entry.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% TAIL: Bibliography, Appendix, CV  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{unsrtnat}
+\bibliography{tail/labbook_bibliography}
+\addcontentsline{toc}{section}{Bibliography}
+
+\printindex
+\addcontentsline{toc}{section}{Index}
+
+%\include{tail/appendix}
+% \include{tail/labbook_bibliography}
+%\include{tail/biblio}
+		%% While using chapterbib / sectionbib Run LATEX; run BibTEX on each included file; run LATEX; run LATEX. 
+		%% For normal bib, silence the per-chapter bibliography and rely on normal use of the bib in this main root file. 
+% Add your glossary here
+% Add your index here
+%\include{tail/publications}
+
+\end{document}
