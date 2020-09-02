@@ -37,13 +37,15 @@ I use Vim to write my LaTeX files. I use the vimtex plugin in combination with a
 (https://skim-app.sourceforge.io).
 
 To automate my labbook writing I add this to my 
-~/bash_profile:
+~/bash_profile (or whereever you keep the config for your shell).
 
 alias cl="vim -p \
      ~/labbook/main/contents_1.tex \
      ~/labbook/labbook_2020.tex"
 
-From my terminal, the command "cl" (short for Captain's log) will then open both the "content_1.tex" and main "labbook_2020.tex" files in two tabs. 
+[Note: check the .quicklog.sh feature for another alias for adding quick entries]
+
+From your terminal, the command "cl" (short for Captain's log) will then open both the "content_1.tex" and main "labbook_2020.tex" files in two tabs. 
 The first will be the daily log where I can quickly add a line. 
 If I desire, I will change to the other tab with vim normal mode command "gt". 
 In this master file I can then compile the document using the vimtex compile command "\ll".
@@ -75,6 +77,7 @@ I = \int \rho R^{2} dV\
 \end{markdown}
 
 # Quick log
+
 The best part of this project might be the quick log script.
 ".quicklog.sh" contains a bash shell script to allow for adding a one line entry to the labbook.
 For every entry the date will be logged in ".log.date".
@@ -84,3 +87,9 @@ The hidden ".log.date" should not get too large over time.
 You could delete it every so often if there are so many entries to become large,
 or modify the ".quicklog.sh" script to delete everything except the last line, i.e. "tail -1".
 However, I will probably write something to read and summarise the log frequency and print a github-like plot in the labbook to see how frequently you add quicklogs.
+
+Add this to your ~/.bash_profile \
+alias clq="sh ~/labbook/.quicklog.sh
+
+Then from your terminal simply add a quick entry using the command:\
+"clq" (which stands for captain's log quick).
