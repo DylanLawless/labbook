@@ -54,23 +54,32 @@ I write a website with modular topics written in markdown files.
 To input those same markdown files (which I will for some methods) do:
 
 
-% In your preamble (head/settings.tex)
-\usepackage[smartEllipses]{markdown}
-% In the main body of your document (content_1.tex)
-\markdownInput{example.md}
+In your preamble (head/settings.tex):
 
+\usepackage[smartEllipses]{markdown}
+
+In the main body of your document (content_1.tex):
+
+\markdownInput{example.md}
 
 Within-file markdown can be used also.
 
 I have some LaTeX used in my markdown files so this would become nested LaTeX.
-% In your preamble
+
+In your preamble:
 \usepackage[hybrid]{markdown}
-% In the main body of your document
+
+In the main body of your document:
+
 \begin{markdown}
+
 Inline math equations go in like so: $\omega = d\phi / dt$. 
 
 
 \begin{equation}
+
 I = \int \rho R^{2} dV
+
 \end{equation}
+
 \end{markdown}
