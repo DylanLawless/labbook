@@ -73,3 +73,14 @@ begin{equation}\
 I = \int \rho R^{2} dV\
 \end{equation}\
 \end{markdown}
+
+# Quick log
+The best part of this project might be the quick log script.
+".quicklog.sh" contains a bash shell script to allow for adding a one line entry to the labbook.
+For every entry the date will be logged in ".log.date".
+If today's date has already been used to add a section for today, then the new entry will simply be added as a new line for that day.
+If this is the first entry today, then the formatted date (Fri, 3 Sep) will be first printed as a section name so that it is added to table of contacts.
+The hidden ".log.date" should not get too large over time.
+You could delete it every so often if there are so many entries to become large,
+or modify the ".quicklog.sh" script to delete everything except the last line, i.e. "tail -1".
+However, I will probably write something to read and summarise the log frequency and print a github-like plot in the labbook to see how frequently you add quicklogs.
