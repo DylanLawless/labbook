@@ -50,7 +50,7 @@ In this master file I can then compile the document using the vimtex compile com
 This will trigger the compiled pdf to open and since my pdf reader can update automatiaclly, I can switch back and forth to the daily log and write complex entries and view the pdf in parallel.
 
 # Input markdown
-I write a website with modular topics written in markdown files.
+[1] I write a website with modular topics written in markdown files.
 To input those same markdown files (which I will for some methods) do:
 
 In your preamble (head/settings.tex):
@@ -59,10 +59,9 @@ In your preamble (head/settings.tex):
 In the main body of your document (content_1.tex):
 \markdownInput{example.md}
 
-Within-file markdown can be used also.
+[2] Within-file markdown can be used also.
 
-I have some LaTeX used in my markdown files so this would become nested LaTeX.
-
+[3] I have some LaTeX used in my markdown files so this would become nested LaTeX.
 In your preamble:
 \usepackage[hybrid]{markdown}
 
