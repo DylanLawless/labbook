@@ -119,3 +119,8 @@ fi
 
 
 To activate the new aliases open a new shell or run "source ~/.bash_profile"
+
+# Additional 
+Personally, I have this template as a submodule within my labbook. 
+I have addded it with "git add submodule git@github.com:DylanLawless/labbook.git template".
+
