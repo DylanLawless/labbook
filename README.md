@@ -37,7 +37,9 @@ I use Vim to write my LaTeX files. I use the vimtex plugin in combination with a
 (https://skim-app.sourceforge.io).
 
 To automate my labbook writing I add this to my 
-.config (whichis sourced by the ~/.bash_profile).
+.config (which is sourced by the ~/.bash_profile).
+
+Edit this path to the location of your labbook.
 
 alias cl="vim -p \
      ~/labbook/main/contents_1.tex \
@@ -89,6 +91,7 @@ or modify the ".quicklog.sh" script to delete everything except the last line, i
 However, I will probably write something to read and summarise the log frequency and print a github-like plot in the labbook to see how frequently you add quicklogs.
 
 Add this to your ~/.config \
+Edit this path to the location of your labbook.\
 alias clq="sh ~/labbook/.quicklog.sh
 
 Then from your terminal simply add a quick entry using the command:\
