@@ -37,7 +37,7 @@ I use Vim to write my LaTeX files. I use the vimtex plugin in combination with a
 (https://skim-app.sourceforge.io).
 
 To automate my labbook writing I add this to my 
-~/bash_profile (or whereever you keep the config for your shell).
+.config (whichis sourced by the ~/.bash_profile).
 
 alias cl="vim -p \
      ~/labbook/main/contents_1.tex \
@@ -77,7 +77,7 @@ I = \int \rho R^{2} dV\
 \end{markdown}
 
 # Quick log
-
+(See config for command line sourcing).
 The best part of this project might be the quick log script.
 ".quicklog.sh" contains a bash shell script to allow for adding a one line entry to the labbook.
 For every entry the date will be logged in ".log.date".
@@ -88,8 +88,30 @@ You could delete it every so often if there are so many entries to become large,
 or modify the ".quicklog.sh" script to delete everything except the last line, i.e. "tail -1".
 However, I will probably write something to read and summarise the log frequency and print a github-like plot in the labbook to see how frequently you add quicklogs.
 
-Add this to your ~/.bash_profile \
+Add this to your ~/.config \
 alias clq="sh ~/labbook/.quicklog.sh
 
 Then from your terminal simply add a quick entry using the command:\
 "clq" (which stands for captain's log quick).
+
+# Config and aliases
+Aliases can be set to use quick access commands from your command line.
+Example, "cl" to open the main files in vim, 
+"clq" to add a quick one line entry directly,
+"clt" to print out the lasts 5 lines of the contents.
+For all aliases that you want to execute from the command line
+the .config should list the desired command and the file path.
+
+This .config file must be read by your ~/.bash_profile (on MacOS)
+Other systems may use .bashrc, etc.
+To source the .config file from you shell
+place this code into your ~/.bash_profile and
+change the labbook directory to match your path:
+
+# Use labbook aliases
+if [ -f ~/labbook/.config ];
+then
+   source ~/labbook/.config
+fi
+
+To activate the new aliases open a new shell or run "source ~/.bash_profile"
