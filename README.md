@@ -111,10 +111,11 @@ To source the .config file from you shell
 place this code into your ~/.bash_profile and
 change the labbook directory to match your path:
 
-# Use labbook aliases
-if [ -f ~/labbook/.config ];
-then
-   source ~/labbook/.config
-fi
+\# Use labbook aliases
+if [ -f ~/labbook/.config ];\
+then\
+   source ~/labbook/.config\
+fi\
+
 
 To activate the new aliases open a new shell or run "source ~/.bash_profile"
