@@ -4,11 +4,18 @@
 # Add an alias to your ~/.bash_profile:
 # alias clq='sh ~/labbook/.quicklog.sh'
 
+# Set your labbook directory here on line 8
+labbook=~/labbook
+
+# If you add a new working contents files (e.g. 1 every year) then update this path on line 11 to match
+contents=$labbook/main/contents_1.tex
+
 # Format today's date
 date=$(date | awk '{print "\\section{"$1",", $3, $2"}"}')
 
 # read the most recent entry date from log
-log=$(tail -1 .log.date)
+# Note that your directory where your labbook is stored must be set on line 8
+log=$(tail -1 "$labbook"/.log.date)
 
 # check if today's date was already written
 a=$(echo "$date")
@@ -32,4 +39,5 @@ else
         echo "$string" >> $contents
 fi
 
-echo "$date" >> .log.date
+# Print the date to the log every time a quick entry is made
+echo "$date" >> "$labbook"/.log.date
