@@ -11,10 +11,10 @@ Feel free to reuse this template.
 ![](screen1.png)
 
 # Tufte-style margin notes, footnotes, code syntax, figures
-![](screen1.png)
+![](screen2.png)
 
 # Bibliography via .bib, indexing links
-![](screen2.png)
+![](screen3.png)
 
 # Make quick entries from the command line with automatic date stamp
 ![](1.0_small.gif)
