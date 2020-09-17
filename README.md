@@ -7,22 +7,28 @@ The EPFL style is not official.
 
 Feel free to reuse this template.
 
-# Table of contents, color project tags, autamitic dating
+Send quick entries straight from the command line with a key-shortcut (clq) or open the master docuement from your terminal (cl) or editor.
+Compile into a beautiful PDF rich in cross-linking, indexing, bibliography, footnotes, sidenotes, and more. 
+A great way to keep track of time-ordered daily work, ideas, methods, links, etc. 
+Since it is relatively modular, I may switch to Markdown instead of LaTeX in the future. 
+Results in a good quality labbook without haivng to worry about any formatting (although figures or tables may need to be checked for size if you add these). 
+
+## Table of contents, color project tags, autamitic dating
 ![](screen1.png)
 
-# Tufte-style margin notes, footnotes, code syntax, figures
+## Tufte-style margin notes, footnotes, code syntax, figures
 ![](screen2.png)
 
-# Bibliography via .bib, indexing links
+## Bibliography via .bib, indexing links
 ![](screen3.png)
 
-# Make quick entries from the command line with automatic date stamp
+## Make quick entries from the command line with automatic date stamp
 ![](1.0_small.gif)
 
-# Launch the main labbook file in vim from the command line
+## Launch the main labbook file in vim from the command line
 ![](1.1_small.gif)
 
-# Switch to the master latex file to compile the PDF
+## Switch to the master latex file to compile the PDF
 ![](1.2_small.gif)
 
 # Layout
