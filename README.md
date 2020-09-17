@@ -7,6 +7,15 @@ The EPFL style is not official.
 
 Feel free to reuse this template.
 
+# Table of contents, color project tags, autamitic dating
+![](screen1.png)
+
+# Tufte-style margin notes, footnotes, code syntax, figures
+![](screen1.png)
+
+# Bibliography via .bib, indexing links
+![](screen2.png)
+
 # Make quick entries from the command line with automatic date stamp
 ![](1.0_small.gif)
 
