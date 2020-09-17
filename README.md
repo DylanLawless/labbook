@@ -10,16 +10,16 @@ Feel free to reuse this template.
 Send quick entries straight from the command line with a key-shortcut (clq) or open the master docuement from your terminal (cl) or editor.
 Compile into a beautiful PDF rich in cross-linking, indexing, bibliography, footnotes, sidenotes, and more. 
 A great way to keep track of time-ordered daily work, ideas, methods, links, etc. 
-Since it is relatively modular, I may switch to Markdown instead of LaTeX in the future. 
+Since it is relatively modular, I may switch to Markdown instead of LaTeX in the future, although markdown files can be input in the current LaTeX document.
 Results in a good quality labbook without haivng to worry about any formatting (although figures or tables may need to be checked for size if you add these). 
 
-## Table of contents, color project tags, autamitic dating
+## Table of contents, color project tags, automatic dates
 ![](screen1.png)
 
-## Tufte-style margin notes, footnotes, code syntax, figures
+## Tufte-style margin notes, footnotes, code font, figures
 ![](screen2.png)
 
-## Bibliography via .bib, indexing links
+## Bibliography via .bib, index important terms
 ![](screen3.png)
 
 ## Make quick entries from the command line with automatic date stamp
