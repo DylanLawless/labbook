@@ -7,7 +7,14 @@ The EPFL style is not official.
 
 Feel free to reuse this template.
 
-![](1.gif)
+# Make quick entries from the command line with automatic date stamp
+![](1.0.gif)
+
+# Launch the main labbook file in vim from the command line
+![](1.1.gif)
+
+# Switch to the master latex file to compile the PDF
+![](1.2.gif)
 
 # Layout
 [1] The main file is labbook_2020.tex.
