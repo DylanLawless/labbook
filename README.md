@@ -7,6 +7,8 @@ The EPFL style is not official.
 
 Feel free to reuse this template.
 
+![](1.gif)
+
 # Layout
 [1] The main file is labbook_2020.tex.
 
