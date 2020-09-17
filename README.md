@@ -50,6 +50,8 @@ This, in combination with the wide margins, gives a "Tuft" style page.
 Indexing can be used where it prints the word that is indexed in the margin as well are printing to the index section at the end of the document where it will give the index list and page numbers. 
 
 # Suggestions
+Check out this very impressive post on using LaTeX [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/).
+
 # Snippets
 If you use Vim, snippets can be use for very quick writing - this can includes shortkeys for things like project labels, headings, etc.
 Snippets can be file specific, in this case I have many that I use for tex files.
